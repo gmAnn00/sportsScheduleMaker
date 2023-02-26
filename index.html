@@ -4,25 +4,162 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sports Schedule Maker</title>
+    <link rel="shortcut icon" href="images/temp_picture.png" />
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   </head>
   <body>
     <!-- wrapper(전체 콘텐츠) 영역 시작 -->
     <div id="wrapper">
       <!-- 헤더 영역 시작 -->
-      <header id="header"></header>
+      <header id="header">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/temp_picture.png" alt="logo" />
+          </a>
+        </h1>
+        <!-- sports schedule maker 안내 링크(탑메뉴) -->
+        <ul class="infoLink">
+          <li><a href="index.html">홈</a></li>
+          <li><a href="login.html">로그인</a></li>
+          <li><a href="join.html">회원가입</a></li>
+          <li><a href="#">사이트맵</a></li>
+          <li><a href="#">ENGLISH</a></li>
+        </ul>
+        <!-- 메인메뉴 -->
+        <nav>
+          <h2 class="hidden">메인메뉴</h2>
+          <ul class="mainMenu">
+            <li>
+              <a href="#"> 운동소개 </a>
+              <ul class="aboutSports">
+                <li><a href="#">복싱</a></li>
+                <li><a href="#">수영</a></li>
+                <li><a href="#">클라이밍</a></li>
+                <li><a href="#">필라테스</a></li>
+              </ul>
+            </li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">커뮤니티</a></li>
+          </ul>
+        </nav>
+      </header>
       <!-- 헤더 영역 종료 -->
 
       <!-- 비주얼 영역 시작 -->
-      <div id="visual"></div>
+      <div id="visual">
+        <div class="boxing">
+          <img src="images/boxing-ring.png" alt="boxing-ring" />
+          <img src="images/boxing-gloves.png" alt="boxing-gloves" />
+        </div>
+        <div class="swimming">
+          <img src="images/swimming-pool.png" alt="swimming-pool" />
+          <img src="images/swimming.png" alt="swimming" />
+        </div>
+        <div class="climing">
+          <img src="images/climbing-wall.png" alt="climbing-wall" />
+          <img src="images/climbing.png" alt="climbing" />
+          <img src="images/man.png" alt="hurray" />
+        </div>
+        <div class="pilates">
+          <img src="images/pilates.png" alt="pilates" />
+        </div>
+      </div>
       <!-- 비주얼 영역 종료 -->
 
       <!-- 콘텐츠 영역 시작 -->
-      <div id="contentsArea"></div>
+      <div id="contentsArea">
+        <!-- 메인 아티클 영역 시작 -->
+        <div id="mainArticle">
+          <article>
+            <img src="images/temp_picture.png" alt="boxing" />
+            <p>
+              아니더면 인간이 얼마나 쓸쓸하랴? 얼음에 싸인 만물은 얼음이 있을
+              뿐이다 그들에게 생명을 불어 넣는 것은 따뜻한 봄바람이다 풀밭에
+              속잎나고 가지에 싹이 트고 꽃 피고 새 우는 봄날의 천지는 얼마나
+              기쁘며 얼마나 아름다우냐?
+            </p>
+          </article>
+          <article>
+            <p>
+              아니더면 인간이 얼마나 쓸쓸하랴? 얼음에 싸인 만물은 얼음이 있을
+              뿐이다 그들에게 생명을 불어 넣는 것은 따뜻한 봄바람이다 풀밭에
+              속잎나고 가지에 싹이 트고 꽃 피고 새 우는 봄날의 천지는 얼마나
+              기쁘며 얼마나 아름다우냐?
+            </p>
+            <img src="images/temp_picture.png" alt="boxing" />
+          </article>
+          <article>
+            <img src="images/temp_picture.png" alt="boxing" />
+            <p>
+              아니더면 인간이 얼마나 쓸쓸하랴? 얼음에 싸인 만물은 얼음이 있을
+              뿐이다 그들에게 생명을 불어 넣는 것은 따뜻한 봄바람이다 풀밭에
+              속잎나고 가지에 싹이 트고 꽃 피고 새 우는 봄날의 천지는 얼마나
+              기쁘며 얼마나 아름다우냐?
+            </p>
+          </article>
+          <article>
+            <p>
+              아니더면 인간이 얼마나 쓸쓸하랴? 얼음에 싸인 만물은 얼음이 있을
+              뿐이다 그들에게 생명을 불어 넣는 것은 따뜻한 봄바람이다 풀밭에
+              속잎나고 가지에 싹이 트고 꽃 피고 새 우는 봄날의 천지는 얼마나
+              기쁘며 얼마나 아름다우냐?
+            </p>
+            <img src="images/temp_picture.png" alt="boxing" />
+          </article>
+        </div>
+        <!-- 메인 아티클 영역 종료 -->
+        <!-- 배너, 소식, 공지사항 영역 시작 -->
+        <div class="usefulArea">
+          <!-- 예약하기, 일일체험신청, 비회원 예약 조회 배너 섹션-->
+          <section class="reservation">
+            <h2 class="hidden">예약하기/일일체험신청/비회원예약조회</h2>
+            <ul>
+              <li>
+                <a href="reservation.html" title="예약 페이지로 이동">
+                  예약하기
+                </a>
+              </li>
+              <li>
+                <a href="#" title="일일 체험 신청 페이지로 이동">
+                  일일 체험 신청
+                </a>
+              </li>
+              <li>
+                <a href="#" title="비회원 예약 조회 페이지로 이동">
+                  비회원 예약 조회
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="sns">
+            <h2>소식</h2>
+            <ul>
+              <li>
+                <a href="#"><img src="images/youtube.png" alt="youtube" /></a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/instagram.png" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/twitter.png" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/facebook.png" alt="facebook" />
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="notice"></section>
+        </div>
+        <!-- 배너, 소식, 공지사항 영역 종료 -->
+      </div>
       <!-- 콘텐츠 영역 종료 -->
-
-      <!-- 슬로건 영역 시작 -->
-      <div id="slogan"></div>
-      <!-- 슬로건 영역 종료 -->
 
       <!-- 푸터 영역 시작 -->
       <footer id="footer">
