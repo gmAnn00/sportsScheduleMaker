@@ -1,0 +1,93 @@
+/* 공통부분 CSS */
+@charset "utf-8";
+
+/* 초기화 */
+html,
+body,
+div,
+header,
+nav,
+section,
+aside,
+article,
+footer,
+figure,
+figcaption,
+legend,
+fieldset,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+ul {
+  list-style: none;
+}
+fieldset {
+  border: 0;
+}
+
+/* 숨김 콘텐츠 */
+.hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* 기본 스타일 */
+/* 폰트 넣어야 함 */
+
+a:link {
+  color: #4f4f4f;
+  text-decoration: none;
+}
+a:visited {
+  color: #8a8e91;
+}
+a:hover,
+a:focus {
+  color: steelblue;
+  text-decoration: none;
+}
+body {
+  color: #000;
+  background-color: #fff;
+}
+#header,
+#visual,
+#contentsArea,
+#footerInner {
+  width: 1024px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 헤더 영역 시작 */
+#header {
+  height: 120px;
+  position: relative;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0 30px;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+}

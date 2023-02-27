@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sports Schedule Maker</title>
     <link rel="shortcut icon" href="images/temp_picture.png" />
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
     <!-- wrapper(전체 콘텐츠) 영역 시작 -->
@@ -109,7 +110,7 @@
           </article>
         </div>
         <!-- 메인 아티클 영역 종료 -->
-        <!-- 배너, 소식, 공지사항 영역 시작 -->
+        <!-- 배너, 소식, 공지사항, 공지배너 영역 시작 -->
         <div class="usefulArea">
           <!-- 예약하기, 일일체험신청, 비회원 예약 조회 배너 섹션-->
           <section class="reservation">
@@ -155,15 +156,73 @@
               </li>
             </ul>
           </section>
-          <section class="notice"></section>
+          <!-- 공지사항 영역 -->
+          <div class="noticeAndBanner">
+            <section class="notice">
+              <h2>공지사항</h2>
+              <ul>
+                <li>
+                  <a href="#">예약, 예약 취소 공지</a>
+                  <time datetime="2023-03-01">2023.03.01</time>
+                </li>
+                <li>
+                  <a href="#">마스크 해제 공지</a>
+                  <time datetime="2023-02-05">2023.02.05</time>
+                </li>
+                <li>
+                  <a href="#">설연휴 기간연장</a>
+                  <time datetime="2023-01-20"></time>
+                </li>
+                <li>
+                  <a href="#">휴관 안내 공지</a>
+                  <time datetime="2023-01-10">2023.02.10</time>
+                </li>
+
+                <li>
+                  <a href="#">신년 이벤트 공지</a>
+                  <time datetime="2023-01-01">2023.01.01</time>
+                </li>
+              </ul>
+            </section>
+            <section class="banner">
+              <img src="images/temp_picture.png" alt="" />
+              <img src="images/temp_picture.png" alt="" />
+              <img src="images/temp_picture.png" alt="" />
+              <img src="images/temp_picture.png" alt="" />
+            </section>
+          </div>
         </div>
-        <!-- 배너, 소식, 공지사항 영역 종료 -->
+        <!-- 배너, 소식, 공지사항, 공지배너 영역 종료 -->
       </div>
       <!-- 콘텐츠 영역 종료 -->
 
       <!-- 푸터 영역 시작 -->
       <footer id="footer">
-        <div id="footerInner"></div>
+        <div id="footerInner">
+          <section class="guide">
+            <h2 class="hidden">사이트 이용 안내</h2>
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">운영정책</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+          </section>
+          <address>
+            <span>서울시 종로구 관철동 미려빌딩 6층</span>
+            <span>전화: 02-1234-5678</span>
+            <span
+              >E-mail:
+              <a href="mailto:webmaster@sportsschedulemaker.com">
+                webmaster@sportsschedulemaker.com
+              </a>
+            </span>
+          </address>
+          <p class="copyright">
+            &copy; 2023 by Sports Schedule Maker CORPORATION ALL RIGHTS
+            RESERVED.
+          </p>
+        </div>
       </footer>
       <!-- 푸터 영역 종료 -->
     </div>
