@@ -91,3 +91,109 @@ body {
   width: 100px;
   height: 100px;
 }
+.infoLink {
+  text-align: right;
+}
+.infoLink > li {
+  display: inline-block;
+  padding: 8px 0 7px 3px;
+}
+.infoLink a::before {
+  content: "|";
+  padding-right: 8px;
+}
+.infoLink > li:first-child a::before {
+  content: "";
+}
+.mainMenu {
+  height: 40px;
+  padding-left: 290px;
+}
+/* 메인메뉴의 상위 메뉴 */
+.mainMenu > li {
+  position: relative;
+  padding: 15px;
+}
+.mainMenu > li > a {
+  color: #555;
+}
+.mainMenu li,
+.mainMenu a {
+  display: inline-block;
+}
+.mainMenu li:hover > a {
+  /* background-color: steelblue; */
+  color: steelblue;
+}
+
+/* 메인메뉴의 하위 메뉴 */
+.mainMenu li:hover ul {
+  display: block;
+}
+.mainMenu ul {
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+.mainMenu ul a:hover {
+  /* background-color: powderblue; */
+  /* color: #000; */
+}
+.mainMenu ul li {
+  width: 130px;
+  padding: 15px;
+}
+/* 헤더 영역 종료 */
+
+/* 메인 콘텐츠 영역 시작 */
+#contentsArea {
+  min-height: 400px;
+  padding: 30px 0 30px 30px;
+  display: flex;
+  flex-flow: row wrap;
+}
+/* 메인 콘텐츠 영역 종료 */
+
+/* 푸터 영역 시작 */
+#footer {
+  padding: 15px 0;
+  height: 150px;
+}
+#footerInner {
+  position: relative;
+  border-top: 1px solid #ccc;
+}
+.footerLogo {
+  position: absolute;
+  left: 35px;
+  top: 35px;
+  width: 80px;
+  height: 80px;
+}
+.guide {
+  padding-left: 80px;
+}
+.guide li {
+  display: inline-block;
+}
+.guide a {
+  display: inline-block;
+  color: #4f4f4f;
+  padding: 10px 15px 10px 0;
+}
+address {
+  font-style: normal;
+  margin-bottom: 5px;
+  position: absolute;
+  left: 120px;
+  top: 45px;
+}
+address span {
+  display: block;
+}
+#footerInner p {
+  position: relative;
+  left: 120px;
+  top: 65px;
+}
+/* 푸터 영역 종료 */
