@@ -3,13 +3,113 @@
 
 /* 비주얼 영역 시작 */
 #visual {
-  width: 100%;
-  height: 300px;
+  height: 250px;
+  border-bottom: 1px solid #ccc;
 }
 #visual div {
-  width: 25%;
-  position: relative;
+  display: inline-block;
+  width: 24%;
+  /* position: relative; */
+  height: 100%;
 }
 .boxing img:first-child {
-  width: 120px;
+  width: 200px;
+  height: 200px;
+  /* position: absolute;
+  left: 370px;
+  top: 10px; */
+}
+.boxing img:last-child {
+  /* width: 100px;
+  height: 100px; */
+  /* position: absolute;
+  left: 420px;
+  top: 10px; */
+}
+.swimming img:first-child {
+  width: 250px;
+  /* height: 250px;
+  position: absolute;
+  left: 620px; */
+}
+.swimming img:last-child {
+  /* width: 80px;
+  height: 80px; */
+  /* position: absolute;
+  left: 670px;
+  top: 100px; */
+}
+.climing img:first-child {
+  width: 200px;
+  height: 200px;
+  /* position: absolute;
+  left: 900px;
+  top: 10px; */
+}
+.climing img:nth-child(2) {
+  /* width: 80px;
+  height: 80px; */
+  /* position: absolute;
+  left: 940px;
+  top: 130px;*/
+}
+.climing img:last-child {
+  /* width: 80px;
+  height: 80px; */
+  /* position: absolute;
+  left: 960px;
+  top: 10px; */
+}
+.pilates img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  /* left: 1120px;
+  top: 10px; */
+}
+#contentsArea {
+  width: 900px;
+}
+#mainArticle {
+  float: left;
+}
+#mainArticle article {
+  overflow: hidden;
+}
+
+#mainArticle article img {
+  width: 300px;
+  height: 300px;
+}
+#mainArticle article p {
+  display: inline-block;
+  width: 500px;
+}
+#mainArticle article:nth-of-type(1) img {
+  float: left;
+}
+#mainArticle article:nth-of-type(1) p {
+  float: right;
+}
+#mainAritcle article:nth-of-type(2) img {
+  float: right;
+}
+#mainArticle article:nth-of-type(2) p {
+  float: left;
+}
+#mainArticle article:nth-of-type(3) img {
+  float: left;
+}
+#mainArticle article:nth-of-type(3) p {
+  float: right;
+}
+#mainAritcle article:nth-of-type(4) img {
+  float: right;
+}
+#mainArticle article:nth-of-type(4) p {
+  float: left;
+}
+
+.usefulArea {
+  width: 300px;
 }
