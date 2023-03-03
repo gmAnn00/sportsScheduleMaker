@@ -1,16 +1,21 @@
 /* 공통부분 CSS */
 @charset "utf-8";
-
+#wrapper {
+  /* overflow: hidden; */
+}
 /* 비주얼 영역 시작 */
 #visual {
   height: 250px;
   border-bottom: 1px solid #ccc;
+  display: flex;
 }
 #visual div {
+  margin: 0;
+  padding: 0;
   display: inline-block;
-  width: 24%;
+  width: 25%;
   /* position: relative; */
-  height: 100%;
+  height: 250px;
 }
 .boxing img:first-child {
   width: 200px;
@@ -67,9 +72,11 @@
   /* left: 1120px;
   top: 10px; */
 }
+/* 콘텐츠 영역 시작 */
 #contentsArea {
-  width: 900px;
+  margin-top: 30px;
 }
+/* 메인 아티클 영역 시작 */
 #mainArticle {
   float: left;
 }
@@ -109,7 +116,58 @@
 #mainArticle article:nth-of-type(4) p {
   float: left;
 }
-
 .usefulArea {
   width: 300px;
+  margin-left: 100px;
+}
+/* 예약하기, 일일체험신청, 비회원예약조회 배너 섹션 */
+.reservation a {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: powderblue;
+  border-radius: 40px;
+  text-align: center;
+}
+/* sns 섹션 */
+.sns {
+  border: 1px solid #ccc;
+}
+.sns h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.sns ul {
+  list-style: none;
+  overflow: hidden;
+}
+.sns li {
+  float: left;
+}
+.sns img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+/* 공지사항 영역 */
+.noticeAndBanner {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+.notice {
+  margin-top: 20px;
+}
+.notice h2 {
+  text-align: center;
+}
+/* 배너 영역 */
+.banner {
+  margin-top: 20px;
+}
+.banner img {
+  width: 200px;
+  height: 200px;
 }
