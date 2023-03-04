@@ -41,7 +41,8 @@ fieldset {
 }
 
 /* 숨김 콘텐츠 */
-.hidden {
+.hidden,
+legend {
   position: absolute;
   left: -9999px;
 }

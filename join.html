@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Schedule Maker</title>
+    <link rel="shortcut icon" href="images/running-shoes.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/join.css" />
+  </head>
+  <body>
+    <!-- wrapper(전체 콘텐츠) 영역 시작 -->
+    <div id="wrapper">
+      <!-- 헤더 영역 시작 -->
+      <header id="header">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+        </h1>
+        <!-- sports schedule maker 안내 링크(탑메뉴) -->
+        <ul class="infoLink">
+          <li><a href="index.html">홈</a></li>
+          <li><a href="login.html">로그인</a></li>
+          <li><a href="join.html">회원가입</a></li>
+          <li><a href="#">사이트맵</a></li>
+          <li><a href="#">ENGLISH</a></li>
+        </ul>
+        <!-- 메인메뉴 -->
+        <nav>
+          <h2 class="hidden">메인메뉴</h2>
+          <ul class="mainMenu">
+            <li>
+              <a href="#"> 운동소개 </a>
+              <ul class="aboutSports">
+                <li><a href="#">복싱</a></li>
+                <li><a href="#">수영</a></li>
+                <li><a href="#">클라이밍</a></li>
+                <li><a href="#">필라테스</a></li>
+              </ul>
+            </li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">커뮤니티</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- 헤더 영역 종료 -->
+
+      <!-- 메인 콘텐츠 영역 시작 -->
+      <div id="contentsArea">
+        <!-- 회원 가입 영역 시작 -->
+        <section id="memberArea">
+          <h2>회원가입</h2>
+          <form action="join.jsp" method="post" id="joinForm" name="joinForm">
+            <fieldset>
+              <legend>회원가입 정보 입력 폼</legend>
+              <p>
+                <label for="name">이름</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="홍길동"
+                />
+              </p>
+              <p>
+                <label for="email">이메일</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="email@gmail.com"
+                />
+              </p>
+              <p>
+                <label for="password">비밀번호</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  placeholder="영문, 숫자를 포함하는 최소 10자리"
+                />
+              </p>
+              <p>
+                <label for="confirmPassword">비밀번호 확인</label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  required
+                />
+              </p>
+              <p>
+                <label for="tel">연락처</label>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  maxlength="11"
+                  size="20"
+                  title="하이픈(-)은 입력할 수 없습니다."
+                  placeholder="01012345678"
+                />
+              </p>
+              <p class="newsletter">
+                <label>뉴스레터</label>
+                <span>
+                  뉴스레터 수신에 동의하시면<br />최신 소식을 받아보실 수
+                  있습니다.
+                </span>
+                <span>
+                  <input
+                    type="radio"
+                    id="newsletterOk"
+                    name="newsletter"
+                    value="Yes"
+                    checked
+                  />
+                  <label for="newsletterOk">예</label>
+                  <input
+                    type="radio"
+                    id="newsletterNo"
+                    name="newsletter"
+                    value="No"
+                  />
+                  <label for="newsletterNo">아니오</label>
+                </span>
+              </p>
+              <div id="btnJoinArea">
+                <button type="submit" class="btnJoin">가입하기</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+        <!-- 회원 가입 영역 종료 -->
+      </div>
+      <!-- 메인 콘텐츠 영역 종료 -->
+
+      <!-- 푸터 영역 시작 -->
+      <footer id="footer">
+        <div id="footerInner">
+          <section class="guide">
+            <h2 class="hidden">사이트 이용 안내</h2>
+            <img src="images/logo.png" alt="logo" class="footerLogo" />
+            <ul class="guide">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">운영정책</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </section>
+          <address>
+            <span>서울시 종로구 관철동 미려빌딩 6층</span>
+            <span>전화: 02-1234-5678</span>
+            <span
+              >E-mail:
+              <a href="mailto:webmaster@sportsschedulemaker.com">
+                webmaster@sportsschedulemaker.com
+              </a>
+            </span>
+          </address>
+          <p class="copyright">
+            &copy; 2023 by
+            <strong>Sports Schedule Maker CORPORATION</strong> ALL RIGHTS
+            RESERVED.
+          </p>
+        </div>
+      </footer>
+      <!-- 푸터 영역 종료 -->
+    </div>
+    <!-- wrapper(전체 콘텐츠) 영역 종료 -->
+  </body>
+</html>

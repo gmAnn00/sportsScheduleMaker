@@ -129,24 +129,25 @@
 }
 .reservation a {
   display: block;
-  width: 250px;
+  width: 230px;
   height: auto;
   margin: 0 auto;
   margin-bottom: 15px;
   padding: 15px;
   /* background: #4682b4; */
-  border: 2px solid #4682b4;
-  background: linear-gradient(to bottom, #87a7c1 0%, #4682b4 100%);
+  border: 1px solid #5ec0e7;
+  background: linear-gradient(to bottom, #bedeed 0%, #5ec0e7 100%);
   border-radius: 40px;
   text-align: center;
-  color: #fff;
+  color: #000;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 .reservation li:first-of-type {
   padding-top: 20px;
 }
 .reservation li:last-of-type a {
   /* background: #999; */
-  border: 2px solid #999;
+  border: 1px solid #999;
   background: linear-gradient(to bottom, #999 0%, #666 100%);
   color: #fff;
 }

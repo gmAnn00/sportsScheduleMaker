@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* 회원가입 영역 시작 */
+
+#memberArea {
+  width: 500px;
+  position: relative;
+  background: #ececec;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+#memberArea h2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#joinForm p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#joinForm p > label {
+  display: block;
+  margin-left: 110px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+#joinForm input:not([type="radio"]) {
+  border: 1px solid #ccc;
+  width: 280px;
+  height: 30px;
+  padding-left: 5px;
+}
+#joinForm span:first-of-type {
+  display: block;
+  width: 270px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-size: 0.8em;
+  margin: 10px auto;
+  padding: 5px 10px;
+}
+#joinForm span:nth-of-type(2) {
+  display: inline-block;
+  width: 200px;
+  /* height: 50px; */
+  margin: 0 auto;
+  /* margin-left: 100px; */
+  /* text-align: center; */
+}
+input#newsletterNo {
+  margin-left: 10px;
+}
+#btnJoinArea {
+  width: 280px;
+  margin: 10px auto;
+}
+#btnJoinArea button {
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: powderblue;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+#btnJoinArea button:active {
+  border: 1px solid #000;
+}
