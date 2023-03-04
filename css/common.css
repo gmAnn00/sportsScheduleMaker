@@ -89,7 +89,7 @@ body {
   left: 70px;
 }
 .logo img {
-  width: 100px;
+  width: 250px;
   height: 100px;
 }
 .infoLink {
@@ -117,6 +117,7 @@ body {
 }
 .mainMenu > li > a {
   color: #555;
+  padding: 10px 15px;
 }
 .mainMenu li,
 .mainMenu a {
@@ -130,15 +131,12 @@ body {
 /* 메인메뉴의 하위 메뉴 */
 .mainMenu li:hover ul {
   display: block;
+  background: rgba(255, 255, 255, 0.8);
 }
 .mainMenu ul {
   display: none;
   position: absolute;
   z-index: 10;
-}
-.mainMenu ul a:hover {
-  /* background-color: powderblue; */
-  /* color: #000; */
 }
 .mainMenu ul li {
   width: 130px;
@@ -168,16 +166,17 @@ body {
 }
 .footerLogo {
   position: absolute;
-  left: 35px;
-  top: 35px;
-  width: 80px;
-  height: 80px;
+  left: -10px;
+  top: 40px;
+  width: 250px;
+  height: 100px;
 }
 .guide {
-  padding-left: 80px;
+  text-align: center;
 }
 .guide li {
   display: inline-block;
+  margin: 10px 30px 10px 30px;
 }
 .guide a {
   display: inline-block;
@@ -188,15 +187,19 @@ address {
   font-style: normal;
   margin-bottom: 5px;
   position: absolute;
-  left: 120px;
-  top: 45px;
+  left: 240px;
+  top: 60px;
 }
 address span {
   display: block;
 }
+address span::before {
+  content: "·";
+  padding: 0 10px 0 0;
+}
 #footerInner p {
   position: relative;
-  left: 120px;
+  left: 240px;
   top: 65px;
 }
 /* 푸터 영역 종료 */

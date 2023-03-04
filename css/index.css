@@ -76,12 +76,18 @@
 }
 
 #mainArticle article img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  /* height: 350px; */
 }
+/* #mainArticle article img:nth-of-type(1) {
+  width: 350px;
+}
+#mainArticle article img:nth-of-type(1) {
+  width: 350px;
+} */
 #mainArticle article p {
   display: inline-block;
-  width: 450px;
+  width: 400px;
   line-height: 1.5;
   margin: 0 20px;
   text-align: justify;
@@ -119,6 +125,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
+  /* background: #ececec; */
 }
 .reservation a {
   display: block;
@@ -127,22 +134,28 @@
   margin: 0 auto;
   margin-bottom: 15px;
   padding: 15px;
-  background: powderblue;
+  /* background: #4682b4; */
+  border: 2px solid #4682b4;
+  background: linear-gradient(to bottom, #87a7c1 0%, #4682b4 100%);
   border-radius: 40px;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
 .reservation li:first-of-type {
   padding-top: 20px;
 }
 .reservation li:last-of-type a {
-  background: #999;
+  /* background: #999; */
+  border: 2px solid #999;
+  background: linear-gradient(to bottom, #999 0%, #666 100%);
   color: #fff;
 }
 /* sns 섹션 */
 .sns {
   border: 1px solid #ccc;
   border-radius: 5px;
+  padding-bottom: 10px;
+  /* background: #ececec; */
 }
 .sns h2 {
   text-align: center;
@@ -168,13 +181,34 @@
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  /* background: #ececec; */
 }
 .notice {
   margin-top: 20px;
 }
 .notice h2 {
   text-align: center;
+  margin-bottom: 15px;
+}
+.notice li {
   margin-bottom: 10px;
+}
+.notice ul a {
+  display: inline-block;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notice ul a::before {
+  content: "·";
+  color: #666;
+  padding: 0 10px;
+}
+.notice time {
+  float: right;
+  color: #7a7a7a;
+  padding-right: 10px;
 }
 /* 배너 영역 */
 .banner {
