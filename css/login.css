@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* 로그인 영역 시작 */
+#loginArea {
+  width: 500px;
+  position: relative;
+  background: #ececec;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  text-align: center;
+}
+#loginArea h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#loginAPI ul {
+  list-style: none;
+  text-align: center;
+}
+#loginAPI ul li {
+  margin-bottom: 10px;
+}
+#loginAPI ul li a {
+  padding: 10px 15px;
+  display: inline-block;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.google {
+  background: #fff;
+}
+.naver {
+  background: #2db400;
+}
+.kakao {
+  background: #ffcd02;
+  color: #964b00;
+}
+.or {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#loginFormArea input {
+  width: 230px;
+  padding-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#btnLoginArea {
+  width: 280px;
+  margin: 10px auto;
+  margin-bottom: 0;
+}
+#btnLoginArea button {
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: powderblue;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+#btnLoginArea button:active {
+  border: 1px solid #000;
+}
+#nonMember a {
+  display: inline-block;
+  width: 280px;
+  padding: 10px 15px;
+  background: #666;
+  color: #fff;
+  border-radius: 5px;
+}
+.lineOr {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.lineOr div {
+  display: inline-block;
+}
+.lineOr .or {
+  width: 50px;
+}
+.lineOr .line {
+  width: 180px;
+  height: 0px;
+  border-bottom: 1px solid #666;
+  position: relative;
+  top: 30px;
+}
