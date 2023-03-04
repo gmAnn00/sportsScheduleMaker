@@ -92,6 +92,13 @@
   margin: 0 20px;
   text-align: justify;
 }
+#mainArticle h3 {
+  margin: 10px;
+  font-weight: normal;
+}
+#mainArticle h3 span {
+  font-weight: bold;
+}
 #mainArticle article:nth-of-type(1) img {
   float: left;
 }
@@ -213,9 +220,30 @@
 }
 /* 배너 영역 */
 .banner {
+  width: 250px;
   margin-top: 20px;
+  margin-left: 25px;
+  overflow: hidden;
+}
+.bannerContainer {
+  width: 750px;
+  height: 250px;
+  transition: all 0.5s;
+}
+.bannerImg {
+  width: 250px;
+  height: 250px;
+  float: left;
 }
 .banner img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+}
+.imgBtns {
+  margin-left: 160px;
+}
+.banner button {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
