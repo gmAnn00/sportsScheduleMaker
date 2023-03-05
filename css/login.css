@@ -75,6 +75,21 @@ a.kakao {
 #btnLoginArea button:active {
   border: 1px solid #000;
 }
+#joinAndFindArea {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 10px;
+  overflow: hidden;
+}
+#joinAndFindArea span {
+  display: inline-block;
+}
+#joinAndFindArea > span:first-of-type {
+  float: left;
+}
+#joinAndFindArea > span:last-of-type {
+  float: right;
+}
 #nonMember a {
   display: inline-block;
   width: 280px;

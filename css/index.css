@@ -151,9 +151,9 @@
   margin: 0 auto;
   margin-bottom: 15px;
   padding: 15px;
-  /* background: #4682b4; */
+  /* background: #bedeed; */
   border: 1px solid #5ec0e7;
-  background: linear-gradient(to bottom, #bedeed 0%, #5ec0e7 100%);
+  background: linear-gradient(to bottom, #90ceeb 0%, #5ec0e7 100%);
   border-radius: 40px;
   text-align: center;
   color: #000;
