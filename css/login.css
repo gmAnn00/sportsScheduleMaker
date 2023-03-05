@@ -10,8 +10,8 @@
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-
   text-align: center;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 #loginArea h2 {
   text-align: center;
@@ -32,15 +32,17 @@
   border-radius: 5px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-.google {
+a.google {
+  color: #000;
   background: #fff;
 }
-.naver {
+a.naver {
+  color: #fff;
   background: #2db400;
 }
-.kakao {
-  background: #ffcd02;
+a.kakao {
   color: #964b00;
+  background: #ffcd02;
 }
 .or {
   display: inline-block;
@@ -95,7 +97,7 @@
 .lineOr .line {
   width: 180px;
   height: 0px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #777;
   position: relative;
   top: 30px;
 }

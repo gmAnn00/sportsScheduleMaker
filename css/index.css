@@ -106,6 +106,9 @@
 #mainArticle h3 span {
   font-weight: bold;
 }
+#mainArticle article:nth-of-type(even) h3 {
+  text-align: right;
+}
 #mainArticle article:nth-of-type(1) img {
   float: left;
 }
@@ -249,8 +252,9 @@
 .imgBtns {
   margin-left: 160px;
 }
-.banner button {
+.imgBtns button {
   border: 1px solid #ccc;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding: 0 5px;
 }

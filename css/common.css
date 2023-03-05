@@ -25,7 +25,8 @@ h1,
 h2,
 h3,
 p,
-img {
+img,
+button {
   margin: 0;
   padding: 0;
 }
@@ -79,6 +80,7 @@ body {
 #header {
   height: 120px;
   position: relative;
+  /* position: fixed; */
   background-color: #fff;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
