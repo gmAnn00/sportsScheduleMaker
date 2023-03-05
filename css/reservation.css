@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 예약 영역 시작 */
+
+#reservationArea {
+  width: 1000px;
+  background: #ececec;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#reservationArea h2 {
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+#calendarContainer {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.reserveTimes {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.reserveTimes label {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.reserveTimes input[type="radio"] {
+  display: none;
+}
+.reserveTimes input[type="radio"]:checked + label {
+  background: #333;
+  color: #fff;
+}

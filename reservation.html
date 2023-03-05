@@ -7,10 +7,9 @@
     <link rel="shortcut icon" href="images/running-shoes.png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reservation.css" />
   </head>
   <body>
-    <script src="js/index.js"></script>
     <!-- wrapper(전체 콘텐츠) 영역 시작 -->
     <div id="wrapper">
       <!-- 헤더 영역 시작 -->
@@ -49,7 +48,79 @@
         </nav>
       </header>
       <!-- 헤더 영역 종료 -->
-      <div id="reservationArea"></div>
+      <!-- 예약 영역 시작 -->
+      <div id="reservationArea">
+        <h2>예약하기</h2>
+        <div id="calendarContainer">
+          <div id="calendar">
+            <div id="topCalendar">
+              <button class="prev">이전 달</button>
+              <span>2월</span>
+              <button class="today">오늘</button>
+              <button class="next">다음 달</button>
+            </div>
+            <div id="calendarContents">
+              <input type="date" />
+            </div>
+          </div>
+          <div id="reservationContents">
+            <select name="sports" id="sports">
+              <option value="boxing">복싱</option>
+              <option value="swimming">수영</option>
+              <option value="climbing">클라이밍</option>
+              <option value="pilates">필라테스</option>
+            </select>
+            <div class="reserveTimes">
+              <input
+                type="radio"
+                id="reserveTime11"
+                name="reserveTime"
+                value="11"
+              />
+              <label for="reserveTime11">11:00</label>
+              <input
+                type="radio"
+                id="reserveTime14"
+                name="reserveTime"
+                value="14"
+              />
+              <label for="reserveTime14">14:00</label>
+              <input
+                type="radio"
+                id="reserveTime15"
+                name="reserveTime"
+                value="15"
+              />
+              <label for="reserveTime15">15:00</label>
+              <input
+                type="radio"
+                id="reserveTime16"
+                name="reserveTime"
+                value="16"
+              />
+              <label for="reserveTime16">16:00</label>
+              <input
+                type="radio"
+                id="reserveTime17"
+                name="reserveTime"
+                value="17"
+              />
+              <label for="reserveTime17">17:00</label>
+              <input
+                type="radio"
+                id="reserveTime19"
+                name="reserveTime"
+                value="19"
+              />
+              <label for="reserveTime19">19:00</label>
+            </div>
+          </div>
+        </div>
+        <div id="BtnReserveArea">
+          <button type="submit">예약하기</button>
+        </div>
+      </div>
+      <!-- 예약 영역 종료 -->
 
       <!-- 푸터 영역 시작 -->
       <footer id="footer">
