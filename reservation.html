@@ -48,21 +48,12 @@
         </nav>
       </header>
       <!-- 헤더 영역 종료 -->
+
       <!-- 예약 영역 시작 -->
       <div id="reservationArea">
         <h2>예약하기</h2>
         <div id="calendarContainer">
-          <div id="calendar">
-            <div id="topCalendar">
-              <button class="prev">이전 달</button>
-              <span>2월</span>
-              <button class="today">오늘</button>
-              <button class="next">다음 달</button>
-            </div>
-            <div id="calendarContents">
-              <input type="date" />
-            </div>
-          </div>
+          <div id="calendarContents"></div>
           <div id="reservationContents">
             <select name="sports" id="sports">
               <option value="boxing">복싱</option>
@@ -156,5 +147,7 @@
       <!-- 푸터 영역 종료 -->
     </div>
     <!-- wrapper(전체 콘텐츠) 영역 종료 -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/reservation.js"></script>
   </body>
 </html>

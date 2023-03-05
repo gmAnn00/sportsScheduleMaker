@@ -21,6 +21,18 @@
   justify-content: center;
   margin: 0 auto;
 }
+#calendarContents {
+  width: 700px;
+}
+.calendarTable td {
+  text-align: center;
+  cursor: pointer;
+}
+#calendarContents tbody td.selectDay {
+  /* border: 1px solid #ccc; */
+  background: powderblue;
+  color: #000;
+}
 .reserveTimes {
   width: 300px;
   display: flex;
