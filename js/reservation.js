@@ -92,9 +92,9 @@ function calendarMaker(target, date) {
       "<button type='button' class='prev'>< 이전 달</button>" +
       "<span>" +
       year +
-      "</span>년 <span>" +
+      "년 " +
       month +
-      "</span>월" +
+      "월</span>" +
       "<button type='button' class='today'>오늘</button>" +
       "<button type='button' class='next'>다음 달 ></button>" +
       "</caption>" +
