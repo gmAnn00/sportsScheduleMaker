@@ -24,9 +24,17 @@
 #calendarContents {
   width: 700px;
 }
+.calendarTable {
+  margin: 0 auto;
+  width: 600px;
+  height: 400px;
+}
 .calendarTable td {
   text-align: center;
   cursor: pointer;
+}
+.calendarTable td:hover {
+  background: powderblue;
 }
 #calendarContents tbody td.selectDay {
   /* border: 1px solid #ccc; */

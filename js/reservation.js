@@ -47,6 +47,7 @@ function calendarMaker(target, date) {
   calMoveEvtFn();
 
   function assembly(year, month) {
+    /*
     let calendarHTMLCode =
       "<table class='calendarTable'>" +
       "<thead class='calDate'>" +
@@ -58,6 +59,45 @@ function calendarMaker(target, date) {
       "</span>월</p></th>" +
       "<th><button type='button' class='next'>다음 달 ></button></th>" +
       "</thead>" +
+      "<thead  class='calWeek'>" +
+      "<th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>" +
+      "</thead>" +
+      "<tbody id='setDate'>" +
+      "</tbody>" +
+      "</table>";
+      */
+    /*
+    let calendarHTMLCode =
+      "<table class='calendarTable'>" +
+      "<thead class='calDate'>" +
+      "<th><button type='button' class='prev'>< 이전 달</button></th>" +
+      "<th colspan='5'><p><span>" +
+      year +
+      "</span>년 <span>" +
+      month +
+      "</span>월</p></th>" +
+      "<th><button type='button' class='today'>오늘</button>" +
+      "<th><button type='button' class='next'>다음 달 ></button></th>" +
+      "</thead>" +
+      "<thead  class='calWeek'>" +
+      "<th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>" +
+      "</thead>" +
+      "<tbody id='setDate'>" +
+      "</tbody>" +
+      "</table>";
+      */
+    let calendarHTMLCode =
+      "<table class='calendarTable' border=1>" +
+      "<caption class='calDate'>" +
+      "<button type='button' class='prev'>< 이전 달</button>" +
+      "<span>" +
+      year +
+      "</span>년 <span>" +
+      month +
+      "</span>월" +
+      "<button type='button' class='today'>오늘</button>" +
+      "<button type='button' class='next'>다음 달 ></button>" +
+      "</caption>" +
       "<thead  class='calWeek'>" +
       "<th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>" +
       "</thead>" +
@@ -92,6 +132,21 @@ function calendarMaker(target, date) {
     $(".calendarTable").on("click", "td", function () {
       $("td.selectDay").removeClass("selectDay");
       $(this).removeClass("selectDay").addClass("selectDay");
+    });
+
+    // 오늘 클릭
+    $(".calendarTable").on("click", ".today", function () {
+      nowDate = new Date();
+      calendarMaker($(target), nowDate);
+      // $("td:contains('" + nowDate.getDate() + "')")
+      //   .removeClass("selectDay")
+      //   .addClass("selectDay");
+      $("td")
+        .filter(function () {
+          return $(this).text() == nowDate.getDate();
+        })
+        .removeClass("selectDay")
+        .addClass("selectDay");
     });
   }
 }
