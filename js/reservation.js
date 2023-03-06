@@ -87,7 +87,7 @@ function calendarMaker(target, date) {
       "</table>";
       */
     let calendarHTMLCode =
-      "<table class='calendarTable' border=1>" +
+      "<table class='calendarTable'>" +
       "<caption class='calDate'>" +
       "<button type='button' class='prev'>< 이전 달</button>" +
       "<span>" +
