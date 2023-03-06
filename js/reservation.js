@@ -148,5 +148,12 @@ function calendarMaker(target, date) {
         .removeClass("selectDay")
         .addClass("selectDay");
     });
+
+    // 빈칸 선택 안함
+    $("td")
+      .filter(function () {
+        return $(this).text() !== "";
+      })
+      .addClass("hasDay");
   }
 }

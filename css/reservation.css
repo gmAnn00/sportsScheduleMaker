@@ -34,14 +34,14 @@
   height: 40px;
   border-bottom: 1px solid #ccc;
 }
-.calendarTable td {
+.calendarTable td.hasDay {
   text-align: center;
   cursor: pointer;
 }
-.calendarTable td:hover {
+.calendarTable td.hasDay:hover {
   background: powderblue;
 }
-#calendarContents tbody td.selectDay {
+#calendarContents tbody td.selectDay.hasDay {
   /* border: 1px solid #ccc; */
   background: powderblue;
   color: #000;
