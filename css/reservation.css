@@ -74,6 +74,9 @@
   height: 40px;
   border-bottom: 1px solid #ccc;
 }
+.calendarTable {
+  background: #fff;
+}
 .calendarTable td.hasDay {
   text-align: center;
   cursor: pointer;

@@ -146,6 +146,9 @@ body {
 .mainMenu {
   height: 40px;
   padding-left: 290px;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 50px;
 }
 /* 메인메뉴의 상위 메뉴 */
 .mainMenu > li {
@@ -181,6 +184,7 @@ body {
 }
 .mainMenu ul li a {
   color: #000;
+  font-weight: normal;
 }
 /* 헤더 영역 종료 */
 
