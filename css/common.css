@@ -49,7 +49,40 @@ legend {
 }
 
 /* 기본 스타일 */
-/* 폰트 넣어야 함 */
+/* 폰트 */
+@font-face {
+  font-family: "NanumGothic";
+  font-weight: 400;
+  src: url(font/NanumGothic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NanumGothicBold";
+  src: url(font/NanumGothicBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NanumGothicExtraBold";
+  src: url(font/NanumGothicExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NanumGothicLight";
+  src: url(font/NanumGothicLight.ttf);
+}
+
+@font-face {
+  font-family: "NanumMyeongjo-YetHangul";
+  src: url(font/NanumMyeongjo-YetHangul.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NanumSquareRoundR";
+  src: url(font/NanumSquareRoundR.ttf);
+}
+@font-face {
+  font-family: "NanumSquareRoundB";
+  src: url(font/NanumSquareRoundB.ttf) format("truetype");
+}
 
 a:link {
   color: #4f4f4f;
@@ -64,6 +97,7 @@ a:focus {
   text-decoration: none;
 }
 body {
+  font-family: "NanumSquareRoundR";
   color: #000;
   background-color: #fff;
 }
@@ -134,7 +168,7 @@ body {
 /* 메인메뉴의 하위 메뉴 */
 .mainMenu li:hover ul {
   display: block;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 1);
 }
 .mainMenu ul {
   display: none;
@@ -144,6 +178,9 @@ body {
 .mainMenu ul li {
   width: 130px;
   padding: 15px;
+}
+.mainMenu ul li a {
+  color: #000;
 }
 /* 헤더 영역 종료 */
 

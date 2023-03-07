@@ -98,6 +98,7 @@
   line-height: 1.5;
   margin: 0 20px;
   text-align: justify;
+  /* font-family: "NanumGothic"; */
 }
 #mainArticle h3 {
   margin: 10px;
@@ -158,6 +159,7 @@
   text-align: center;
   color: #000;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  font-family: "NanumSquareRoundB";
 }
 .reservation li:first-of-type {
   padding-top: 20px;
@@ -177,6 +179,7 @@
 }
 .sns h2 {
   text-align: center;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 .sns ul {

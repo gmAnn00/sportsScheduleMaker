@@ -13,8 +13,9 @@
 }
 #reservationArea h2 {
   margin-top: 20px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-bottom: 40px;
+  font-size: 2em;
 }
 #calendarContainer {
   width: 1000px;
@@ -85,10 +86,23 @@
   background: powderblue;
   color: #000;
 }
+#calendarContents .blue {
+  color: blue;
+}
+#calendarContents .red {
+  color: red;
+}
+#reservationContents p {
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
 #sports {
   display: inline-block;
-  width: 200px;
+  width: 240px;
   height: 40px;
+  /* margin-top: 20px; */
   margin-bottom: 30px;
 }
 .reserveTimes {
@@ -97,9 +111,14 @@
   flex-wrap: wrap;
 }
 .reserveTimes label {
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding: 5px 15px;
+  width: 80px;
+  text-align: center;
+  margin-right: 35px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 30px;

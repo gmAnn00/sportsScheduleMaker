@@ -99,7 +99,7 @@ function calendarMaker(target, date) {
       "<button type='button' class='next'>다음 달 ></button>" +
       "</caption>" +
       "<thead  class='calWeek'>" +
-      "<th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>" +
+      "<th class='red'>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th class='blue'>토</th>" +
       "</thead>" +
       "<tbody id='setDate'>" +
       "</tbody>" +
@@ -155,5 +155,19 @@ function calendarMaker(target, date) {
         return $(this).text() !== "";
       })
       .addClass("hasDay");
+
+    // 토요일들 파란색 줌
+    $("td")
+      .filter(function () {
+        return $(this).index("td") % 7 == 6;
+      })
+      .addClass("blue");
+
+    // 일요일들 빨간색 줌
+    $("td")
+      .filter(function () {
+        return $(this).index("td") % 7 == 0;
+      })
+      .addClass("red");
   }
 }
